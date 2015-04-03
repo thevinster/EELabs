@@ -24,13 +24,7 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="bmplib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="character.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="point.h">
+    <ClInclude Include="student.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,13 +32,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="test_ocr.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="bmplib.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="character.cpp">
+    <ClCompile Include="student_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
