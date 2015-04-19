@@ -142,17 +142,20 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Pa5\design.h" />
+    <ClInclude Include="Pa5\gates.h" />
+    <ClInclude Include="Pa5\net.h" />
+    <ClInclude Include="Pa5\stdafx.h" />
+    <ClInclude Include="Pa5\targetver.h" />
+    <ClInclude Include="Pa5\vlg_parser.h" />
+    <ClInclude Include="Pa5\vlg_parser_auto.h" />
+    <ClInclude Include="Pa5\vlg_parser_man.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="shapes.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
+    <ClCompile Include="Pa5\design.cpp" />
+    <ClCompile Include="Pa5\gsim.cpp" />
+    <ClCompile Include="Pa5\stdafx.cpp" />
+    <ClCompile Include="Pa5\vlg_parser_auto.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

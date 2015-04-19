@@ -2,12 +2,6 @@
     CONSOLE APPLICATION : EE_355 Project Overview
 ========================================================================
 
-AppWizard has created this EE_355 application for you.
-
-This file contains a summary of what you will find in each of the files that
-make up your EE_355 application.
-
-
 EE_355.vcxproj
     This is the main project file for VC++ projects generated using an Application Wizard.
     It contains information about the version of Visual C++ that generated the file, and
@@ -21,8 +15,8 @@ EE_355.vcxproj.filters
     similar extensions under a specific node (for e.g. ".cpp" files are associated with the
     "Source Files" filter).
 
-EE_355.cpp
-    This is the main application source file.
+Compiling:
+    Remember to move the files where the .vcxproj is located
 
 /////////////////////////////////////////////////////////////////////////////
 Other standard files:
