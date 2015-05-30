@@ -142,20 +142,27 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Pa5\design.h" />
-    <ClInclude Include="Pa5\gates.h" />
-    <ClInclude Include="Pa5\net.h" />
-    <ClInclude Include="Pa5\stdafx.h" />
-    <ClInclude Include="Pa5\targetver.h" />
-    <ClInclude Include="Pa5\vlg_parser.h" />
-    <ClInclude Include="Pa5\vlg_parser_auto.h" />
-    <ClInclude Include="Pa5\vlg_parser_man.h" />
+    <ClCompile Include="design.cpp" />
+    <ClCompile Include="gates.cpp" />
+    <ClCompile Include="gsim.cpp" />
+    <ClCompile Include="LogicSim.cpp" />
+    <ClCompile Include="net.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vlg_parser_auto.cpp" />
+    <ClCompile Include="vlg_parser_man.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Pa5\design.cpp" />
-    <ClCompile Include="Pa5\gsim.cpp" />
-    <ClCompile Include="Pa5\stdafx.cpp" />
-    <ClCompile Include="Pa5\vlg_parser_auto.cpp" />
+    <ClInclude Include="design.h" />
+    <ClInclude Include="gates.h" />
+    <ClInclude Include="LogicSim.h" />
+    <ClInclude Include="net.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="vlg_parser.h" />
+    <ClInclude Include="vlg_parser_auto.h" />
+    <ClInclude Include="vlg_parser_man.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

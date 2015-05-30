@@ -187,6 +187,10 @@ class Design {
    * @return true if the Net is a primary output, false otherwise
    */
   bool isPO(Net *n);
+
+  vector<string> getPI() { return pis; }
+
+  vector<string> getPO() { return pos; }
  private:
 
   /**
@@ -205,8 +209,8 @@ class Design {
  private:
   /* Data members */
   string desname;
-  map<string, Net *> designNets;
-  map<string, Gate *> designGates;
+  map<string, Net*> designNets;
+  map<string, Gate*> designGates;
   vector<string> pis;
   vector<string> pos;
 

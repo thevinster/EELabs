@@ -22,9 +22,9 @@ VlgParserAuto::VlgParserAuto()
 
 Design *VlgParserAuto::parse(char *filename)
 {
-  if(read_verilog(filename)){
+  /*if(read_verilog(filename)){
     Design *d = current_design;
     return d;
-  }
+  }*/
   return NULL;
 }

@@ -1,9 +1,9 @@
 #ifndef GATE_H
 #define GATE_H
 
+#include <iostream>
 #include <vector>
 #include <string>
-#include "net.h"
 
 using namespace std;
 
@@ -116,8 +116,8 @@ class Gate {
   int getNumInputs() const;
 
  protected:
-  vector<Net *> *inputs;
-  Net *output;
+  vector<Net*>* inputs;
+  Net* output;
   string inst_name;
   int delay;
 };
