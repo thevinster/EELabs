@@ -50,9 +50,9 @@ begin
 	empty = 1'b0;
 	full = 1'b0;
 //task #2: fill in the conditions for signal "empty" and "full". DONE
-	if (raw_almost_empty  && depth == 0)
+	if (AE_AF_flag == 1'b0 && depth == 0)
 		empty = 1'b1;
-	if (raw_almost_full && depth == 0) 
+	if (AE_AF_flag == 1'b1 && depth == 0) 
 		full = 1'b1;
 end
 
@@ -78,11 +78,11 @@ begin
 				end
 			if (renq)
 				rdptr <= rdptr + 1;
-// task #4: complete set and reset of AE_AF_flag (zero means almost empty and one means almost full).
-			if (raw_almost_empty == 1'b1)
-				AE_AF_flag <= 1'b0;
-			else if (raw_almost_full == 1'b1)
+// task #4: complete set and reset of AE_AF_flag (zero means almost empty and one means almost full).	
+			if (raw_almost_full == 1'b1) 
 				AE_AF_flag <= 1'b1;
+			else if (raw_almost_empty == 1'b1)
+				AE_AF_flag <= 1'b0;
 		end
 end
 
